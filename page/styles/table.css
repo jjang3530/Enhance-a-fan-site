@@ -1,0 +1,197 @@
+html {
+	background-image: url("../images/oraclearenaG.jpg");	
+}
+*{
+margin: 0;
+Padding: 0;
+}
+body  {
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	width: 960px;	
+	margin: 0 auto; 
+	margin-top: 30px;
+	padding: 0;
+	background-color: black;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+a {
+    font-weight: bold;
+    color: orange;
+}
+a:link, a:visited { 
+    color: orange; 
+}
+a:hover, a:focus { 
+    color: green;
+}
+
+/* Header */
+header { 
+    height: 150px;
+    padding: 15px;
+    border-bottom: 2px solid black;
+} 
+header img { 
+	float: left; 
+	padding-left: 50px;
+	padding-right: 60px;  
+} 
+
+header h1{
+	/* The logo text */
+	color: #1a65b8;
+	font-size:2em;
+	padding:.5em .5em 0 0;
+	text-shadow:0 2px 2px #fcbf17;
+	text-transform:uppercase;
+}
+
+header h3{
+	/* The slogan text */
+	font-size:4.5em;
+	color: #1a65b8;
+	font-weight:bold;
+	text-shadow:0 2px 2px #fcbf17;
+}
+
+
+
+/* Nav  */
+#nav_menu ul {
+    list-style: none;        
+    position: relative; 
+    }    
+#nav_menu ul li{ float: left;
+	font-size:1.2em;
+	font-weight:bold;
+	text-shadow:0 1px 1px black;
+	text-transform:uppercase;
+}   
+    
+#nav_menu ul ul {
+    float: left;
+    display: none;      
+    font-size:.8em;
+    position: absolute;
+    top: 100%;                
+}   
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 240px;
+    padding: .8em 0;
+    text-decoration: none;
+    background:#fcbf17;
+    color: white;
+    font-weight: normal;}
+    
+#nav_menu ul ul li ul {
+	position: absolute;
+	left: 100%; 
+	top: 0;
+}
+#nav_menu ul li a.current { color: black; }           
+#nav_menu ul ul li { float: none; }
+#nav_menu ul ul li a.link { color: #1a65b8; }  
+#nav_menu ul li:hover > ul {
+    display: block; }
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both; }
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+     background-color: #1a65b8; }
+
+
+
+/* Sidebar */
+#nav_aside ul { 
+    list-style-type: none;
+    margin-left: 2.5em;
+}
+
+#nav_aside ul li { 
+    margin-bottom: .5em;
+ }
+    
+#nav_aside ul li a {
+    display: block;
+    padding: .5em 0 .5em .5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black; }
+
+
+aside {
+	float: left; 
+	width: 200px;
+	padding: 10px 0;
+}
+aside ul {
+        list-style-type: none;
+	line-height: 1.5;
+}
+aside img{
+	border: 2px solid #fcbf17;}
+	
+aside figure {
+    float: left;
+}
+aside figcaption {
+    display: block;
+    color: #fcbf17;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #fcbf17; }
+
+ 
+/* Section */
+section {
+	width: 680px;
+	float: left;
+	padding: 0px 40px 10px 20px;	
+	border-left: 2px solid #fcbf17;
+	margin-top: 1em;
+        margin-bottom: .5em;
+}
+
+section h2 {
+	font-size: 250%;
+	color: #fcbf17;
+	margin-top: .3em;
+}
+
+table {
+    border: 1px solid white;
+    border-collapse: collapse; }
+th, td {
+    color: white;
+    border: 1px solid white;
+    padding: .4em .7em;
+    text-align: right; }
+
+section img { float: left;
+	border:2px solid #f2f2f2;
+	border-radius:5px;
+	width:260px;
+	background-color: white;
+	margin-right: 20px;
+	margin-bottom: 25px;
+	}
+
+/* Footer */
+footer { 
+	clear: both;
+	border-top: 2px solid #fcbf17;
+	padding: 15px;
+} 
+footer p {
+	color:#fcbf17;
+	font-size: 90%;
+	text-align: center;
+}
